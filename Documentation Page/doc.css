@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Roboto+Condensed:wght@300&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* margin: 20px; */
+    line-height: 1.6em;
+    font-family: Lato, 'Roboto Condensed', sans-serif;
+    background-color: white;
+}
+
+#top {
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    padding: 18px 0px;
+    font-size: 30px;
+    font-weight: normal;
+    /* border-bottom: 3px solid black; */
+}
+
+header {
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#navbar {
+    overflow: scroll;
+    background-color: cornsilk;
+    /* border-top: 3px solid black; */
+    /* border-bottom: 3px solid black; */
+}
+
+.letters /*ul*/ {
+    width: 100%;
+    padding: 0;
+    height: 210px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.nav-link {
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+#first {
+    border-top: none;
+}
+
+.numbers /*li*/ {
+    padding: 10px;
+    display: block;
+    list-style: none;
+    border-top: 2px solid rgb(206, 82, 82);
+}
+
+#main-doc {
+    padding: 15px;
+    margin-bottom: 50px;
+}
+
+header {
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+p {
+    margin: 15px;
+    /* line-height: 1.6em; */
+}
+
+#general > ul > li {
+    margin: 15px auto;
+}
+
+#general > ul {
+   padding-right: 15px;
+}
+
+.last > li {
+    margin: 10px auto;
+}
+
+pre {
+    /* text-align: center; */
+    width: 90%;
+    min-width: 150px;
+    margin: 5px auto;
+    background-color: bisque;
+}
+
+code {
+    width: 60%;
+    min-width: 150px;
+    padding-left: 18px;
+    white-space: pre-line;
+    display: block;
+    text-align: left;
+}
+
+
+@media screen and (min-width: 800px) {
+    #navbar {
+        height: 100%;
+        width: 310px;
+        min-width: 305px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        padding-top: 20px;
+        overflow: hidden;
+        overflow-x: hidden;
+        border-right: 2px solid;
+        border-color: darkolivegreen;
+        background-color: aquamarine;
+    }
+
+    .letters {
+        height: 88%;
+        padding: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+        border: none;
+    }
+
+    #main-doc {
+        position: absolute;
+        margin-left: 310px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+}
